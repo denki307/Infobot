@@ -1,0 +1,33 @@
+{
+  "name": "Referral Telegram Bot",
+  "description": "Telegram Referral Bot with Admin Panel",
+  "logo": "https://telegram.org/img/t_logo.png",
+  "keywords": ["telegram", "pyrogram", "bot", "referral"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token from BotFather",
+      "required": true
+    },
+    "ADMIN_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ]
+}
